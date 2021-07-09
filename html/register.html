@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>User Registration Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="/ezpapeterie/js/validate.js"></script>
+		<link rel="stylesheet" href="/ezpapeterie/css/style.css">
+		<link rel="shortcut icon" type="image" href="/ezpapeterie/images/ezlogo.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<!-- HEADER -->
+		<div class="header">
+			<h1>User Registration Page</h1>
+		</div>
+		<!-- NAVIGATION BAR -->
+		<div class="navbar">
+			<a href="/ezpapeterie/index.html" class="right">Back</a>
+			<a href="/ezpapeterie/php/user/loginus.php" class="right">Login</a>
+		</div>
+		<!-- LOGO -->
+		<center>
+			<img src="/ezpapeterie/images/ezlogo.png">
+		</center>
+		<!-- REQUIRED FIELDS FOR RESGISTRATION -->
+		<div class="main">
+			<div class="container">
+				<form name="registerForm" action="../php/user/register.php" onsubmit="return validateRegForm()"
+				method="post">
+					<!-- NAME -->
+					<div class="row">
+						<div class="col-25">
+							<i class="fa fa-user icon"></i>
+							<label for="fname">Name</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="idname" name="name" placeholder="Please key in your name">
+						</div>
+					</div>
+					<!-- EMAIL -->
+					<div class="row">
+						<div class="col-25">
+							<i class="fa fa-envelope icon"></i>
+							<label for="lname">Email</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="idemail" name="email" placeholder="Please key in your email">
+						</div>
+					</div>
+					<!-- PHONE -->
+					<div class="row">
+						<div class="col-25">
+							<i class="fa fa-phone icon"></i>
+							<label for="lphone">Phone number</label>
+						</div>
+						<div class="col-75">
+							<input type="tel" id="idphone" name="phone" placeholder="Please key in your phone number">
+						</div>
+					</div>
+					<!-- PASSWORD -->
+					<div class="row">
+						<div class="col-25">
+							<i class="fa fa-key icon"></i>
+							<label for="lpassword">Password</label>
+						</div>
+						<div class="col-75">
+							<input type="password" id="idpass" name="passworda" placeholder="Please key in your password">
+						</div>
+					</div>
+					<!-- RE-ENTER PASSWORD -->
+					<div class="row">
+						<div class="col-25">
+							<i class="fa fa-key icon"></i>
+							<label for="lpassword">Re-enter password</label>
+						</div>
+						<div class="col-75">
+							<input type="password" id="idpassb" name="passwordb" placeholder="Please re-enter your password">
+						</div>
+					</div>
+					<br>
+					<!-- REGISTER BUTTON -->
+					<div class="row">
+						<div><input type="submit" value="Register"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<div class="footer">
+			<p><b>Copyright 2021 <span>&#169;</span> EZ Papeteria. All rights reserved.</b></p>
+		</div>
+	</body>
+</html>											
